@@ -26,7 +26,7 @@ class Solution(object):
 		:rtype: List[int]
 		"""
 		result = [0, 0]
-		# The internal implementation of python dictionary is actually a dictionary.
+		# The internal implementation of python dictionary is actually a HashTable.
 		dict = {}
 		for i in range(len(nums)):
 			if target - nums[i] in dict:
