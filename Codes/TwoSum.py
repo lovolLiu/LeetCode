@@ -18,20 +18,23 @@ Time complexity: O(N)
 Why?
 The time complexity of lookup for keys in HashTable and insert/acquire elements in HashTable are O(1).
 """
+
+
 class Solution(object):
-	def twoSum(self, nums, target):
-		"""
-		:type nums: List[int]
-		:type target: int
-		:rtype: List[int]
-		"""
-		result = [0, 0]
-		# The internal implementation of python dictionary is actually a HashTable.
-		dict = {}
-		for i in range(len(nums)):
-			if target - nums[i] in dict:
-				result[0] = dict[target - nums[i]]
-				result[1] = i
-			else:
-				dict[nums[i]] = i
-		return result
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        result = [0, 0]
+        # The internal implementation of python dictionary is actually a
+        # HashTable.
+        dict = {}
+        for i in range(len(nums)):
+            if target - nums[i] in dict:
+                result[0] = dict[target - nums[i]]
+                result[1] = i
+            else:
+                dict[nums[i]] = i
+        return result

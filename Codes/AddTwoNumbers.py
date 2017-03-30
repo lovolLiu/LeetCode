@@ -40,6 +40,7 @@ class Solution(object):
     """
     We can write codes below simply according to the pseudo codes above.
     """
+
     def addTwoNumbers(self, l1, l2):
         """
         :type l1: ListNode
@@ -73,6 +74,7 @@ class Solution(object):
     """
     Some of the if conditions on the above codes are the same and can be merged into one block.
     """
+
     def addTwoNumbers1(self, l1, l2):
         """
         :type l1: ListNode
