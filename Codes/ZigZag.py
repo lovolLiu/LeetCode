@@ -17,6 +17,8 @@ We can use nRows String to store each line of the converted string and combine t
 The key to this problem is to use a variable incre to tell the pointer which direction it should go, if the pointer is
 at the first line, than go down, if it is at the last line, than go up.
 """
+
+
 class Solution(object):
     def convert(self, s, numRows):
         """
